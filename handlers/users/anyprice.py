@@ -206,11 +206,11 @@ async def answer_is_photo(call: types.CallbackQuery, state: FSMContext):
                 data_to_user_response = await handler_request(request=hotels, message_data=data, is_photo=False)
                 for hotel in data_to_user_response:
                     hotel_id = hotel.get('hotel_id')
-                    answer_message = '{name}\n' \
-                                     'адрес: {adress}\n' \
-                                     'расстояние от центра: {dist}\n' \
-                                     'цена: {price}\n' \
-                                     'ссылка на отель: {url}'.format(name=hotel.get("hotel_name"),
+                    answer_message = 'Название: {name}\n' \
+                                     'Адрес: {adress}\n' \
+                                     'Расстояние от центра: {dist}\n' \
+                                     'Цена за сутки: {price}\n' \
+                                     'Ссылка на отель: {url}'.format(name=hotel.get("hotel_name"),
                                                                      adress=hotel.get("address"),
                                                                      dist=hotel.get("distance_from_center"),
                                                                      price=hotel.get("price"),
@@ -219,6 +219,7 @@ async def answer_is_photo(call: types.CallbackQuery, state: FSMContext):
                                                                      )
                                                                      )
                     await call.message.answer(answer_message)
+                    asyncio.create_task(delete_message(data['temp_mes']))
             await state.reset_state()
             logger.info('Очистил state')
 
