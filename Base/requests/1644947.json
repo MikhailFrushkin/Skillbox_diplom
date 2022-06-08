@@ -1,133 +1,119 @@
 [
     {
-        "id": 531217,
-        "name": "Family 3 Bedroom Ocean Villa by Omni",
-        "starRating": 4.0,
+        "id": 2499742368,
+        "name": "Las Palmas Hostal",
+        "starRating": 2.0,
         "urls": {},
         "address": {
-            "streetAddress": "Boulevard Kukulcan KM 16.5",
-            "extendedAddress": "L-48 MZA.53",
+            "streetAddress": "12 De Las Palmas, 77506 Cancun, Mexico",
+            "extendedAddress": "",
             "locality": "Cancun",
-            "postalCode": "77500",
+            "postalCode": "77506",
             "region": "QROO",
             "countryName": "Mexico",
             "countryCode": "mx",
             "obfuscate": false
         },
-        "guestReviews": {
-            "unformattedRating": 7.6,
-            "rating": "7.6",
-            "total": 26,
-            "scale": 10,
-            "badge": "good",
-            "badgeText": "Good"
-        },
         "landmarks": [
             {
                 "label": "City center",
-                "distance": "6.9 miles"
+                "distance": "1.6 miles"
             },
             {
                 "label": "Cancun, Quintana Roo (CUN-Cancun Intl.)",
-                "distance": "6.7 miles"
+                "distance": "7.5 miles"
             }
         ],
         "geoBullets": [],
         "ratePlan": {
             "price": {
-                "current": "$1,070",
-                "exactCurrent": 1069.75,
-                "old": "$1,426"
+                "current": "$15",
+                "exactCurrent": 15.32
             },
             "features": {
                 "paymentPreference": false,
                 "noCCRequired": false
             }
         },
-        "neighbourhood": "Zona Hotelera",
+        "neighbourhood": "Downtown Cancun",
         "deals": {},
         "messaging": {},
         "badging": {},
-        "pimmsAttributes": "DoubleStamps|OnBeachPropertyv2|TESCO",
         "coordinate": {
-            "lat": 21.074804,
-            "lon": -86.776633
+            "lat": 21.145168,
+            "lon": -86.841435
         },
         "providerType": "LOCAL",
-        "supplierHotelId": 11454603,
+        "supplierHotelId": 78085699,
         "isAlternative": false,
         "optimizedThumbUrls": {
-            "srpDesktop": "https://exp.cdn-hotels.com/hotels/12000000/11460000/11454700/11454603/5d67c094_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            "srpDesktop": "https://exp.cdn-hotels.com/hotels/79000000/78090000/78085700/78085699/1edb50cb_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
         }
     },
     {
-        "id": 603994,
-        "name": "Turquoize at Hyatt Ziva Cancun - Adults Only - All Inclusive",
-        "starRating": 5.0,
+        "id": 495994,
+        "name": "Hotel Marytere",
+        "starRating": 2.5,
         "urls": {},
         "address": {
-            "streetAddress": "Blvd. Kukulcan, Manzana 51, Lote. 7",
-            "extendedAddress": "Hotel Zone",
+            "streetAddress": "Sm. 64 Mz. 11 Lotes 1y2 Calle 7",
+            "extendedAddress": "Colonia Centro",
             "locality": "Cancun",
-            "postalCode": "77500",
+            "postalCode": "77524",
             "region": "QROO",
             "countryName": "Mexico",
             "countryCode": "mx",
             "obfuscate": false
         },
         "guestReviews": {
-            "unformattedRating": 9.4,
-            "rating": "9.4",
-            "total": 999,
-            "scale": 10,
-            "badge": "exceptional",
-            "badgeText": "Exceptional"
+            "unformattedRating": 5.0,
+            "rating": "5.0",
+            "total": 44,
+            "scale": 10
         },
         "landmarks": [
             {
                 "label": "City center",
-                "distance": "5.7 miles"
+                "distance": "1.0 mile"
             },
             {
                 "label": "Cancun, Quintana Roo (CUN-Cancun Intl.)",
-                "distance": "11 miles"
+                "distance": "10 miles"
             }
         ],
         "geoBullets": [],
         "ratePlan": {
             "price": {
-                "current": "$901",
-                "exactCurrent": 901.0,
-                "old": "$1,060"
+                "current": "$18",
+                "exactCurrent": 17.87
             },
             "features": {
                 "paymentPreference": false,
                 "noCCRequired": false
             }
         },
-        "neighbourhood": "Punta Cancun",
+        "neighbourhood": "Downtown Cancun",
         "deals": {},
         "messaging": {},
         "badging": {},
-        "pimmsAttributes": "DoubleStamps|Oceanviewv1|OnBeachPropertyv2|TESCO",
         "coordinate": {
-            "lat": 21.13597,
-            "lon": -86.741856
+            "lat": 21.178374,
+            "lon": -86.826947
         },
-        "providerType": "MULTISOURCE",
-        "supplierHotelId": 15533065,
+        "providerType": "LOCAL",
+        "supplierHotelId": 10104036,
         "isAlternative": false,
         "optimizedThumbUrls": {
-            "srpDesktop": "https://exp.cdn-hotels.com/hotels/16000000/15540000/15533100/15533065/ce6336bd_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            "srpDesktop": "https://exp.cdn-hotels.com/hotels/11000000/10110000/10104100/10104036/bf31e7c5_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
         }
     },
     {
-        "id": 536319,
-        "name": "Hyatt Ziva Cancun All Inclusive",
-        "starRating": 4.5,
+        "id": 2510567648,
+        "name": "Casa Alce",
+        "starRating": 2.5,
         "urls": {},
         "address": {
-            "streetAddress": "Blvd. Kukulcan, Manzana 51, Lote 7",
+            "streetAddress": "C. Alce 7 20",
             "extendedAddress": "",
             "locality": "Cancun",
             "postalCode": "77500",
@@ -136,243 +122,158 @@
             "countryCode": "mx",
             "obfuscate": false
         },
-        "guestReviews": {
-            "unformattedRating": 9.2,
-            "rating": "9.2",
-            "total": 1684,
-            "scale": 10,
-            "badge": "superb",
-            "badgeText": "Superb"
-        },
         "landmarks": [
             {
                 "label": "City center",
-                "distance": "5.7 miles"
+                "distance": "0.7 miles"
             },
             {
                 "label": "Cancun, Quintana Roo (CUN-Cancun Intl.)",
-                "distance": "11 miles"
+                "distance": "8.4 miles"
             }
         ],
         "geoBullets": [],
         "ratePlan": {
             "price": {
-                "current": "$765",
-                "exactCurrent": 765.0,
-                "old": "$900"
+                "current": "$18",
+                "exactCurrent": 18.07
             },
             "features": {
                 "paymentPreference": false,
                 "noCCRequired": false
             }
         },
-        "neighbourhood": "Punta Cancun",
+        "neighbourhood": "Downtown Cancun",
         "deals": {},
         "messaging": {},
         "badging": {},
-        "pimmsAttributes": "Oceanviewv1|DoubleStamps|DELTA21|OnBeachPropertyv2|TESCO",
         "coordinate": {
-            "lat": 21.135614,
-            "lon": -86.742344
+            "lat": 21.153948,
+            "lon": -86.828342
         },
         "providerType": "LOCAL",
-        "supplierHotelId": 11669114,
+        "supplierHotelId": 78423989,
         "isAlternative": false,
         "optimizedThumbUrls": {
-            "srpDesktop": "https://exp.cdn-hotels.com/hotels/12000000/11670000/11669200/11669114/896b3429_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            "srpDesktop": "https://exp.cdn-hotels.com/hotels/79000000/78430000/78424000/78423989/80bfadd4_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
         }
     },
     {
-        "id": 120069,
-        "name": "Le Blanc Spa Resort Cancun - Adults Only - All Inclusive",
-        "starRating": 5.0,
+        "id": 493575,
+        "name": "Motel Costa",
+        "starRating": 2.5,
         "urls": {},
         "address": {
-            "streetAddress": "Boulevard Kukulcan Km 10",
-            "extendedAddress": "Zona Hotelera",
+            "streetAddress": "Av. L\u00f3pez Portillo No. 1557 Mza. 19",
+            "extendedAddress": "Lote 14 Reg. 104",
             "locality": "Cancun",
-            "postalCode": "77500",
+            "postalCode": "77539",
             "region": "QROO",
             "countryName": "Mexico",
             "countryCode": "mx",
             "obfuscate": false
         },
         "guestReviews": {
-            "unformattedRating": 9.4,
-            "rating": "9.4",
-            "total": 1012,
-            "scale": 10,
-            "badge": "exceptional",
-            "badgeText": "Exceptional"
+            "unformattedRating": 5.8,
+            "rating": "5.8",
+            "total": 59,
+            "scale": 10
         },
         "landmarks": [
             {
                 "label": "City center",
-                "distance": "5.3 miles"
+                "distance": "4.4 miles"
             },
             {
                 "label": "Cancun, Quintana Roo (CUN-Cancun Intl.)",
-                "distance": "9.8 miles"
+                "distance": "7.2 miles"
             }
         ],
         "geoBullets": [],
         "ratePlan": {
             "price": {
-                "current": "$678",
-                "exactCurrent": 677.69,
-                "old": "$847"
+                "current": "$20",
+                "exactCurrent": 19.74,
+                "old": "$42"
             },
             "features": {
                 "paymentPreference": false,
                 "noCCRequired": false
             }
         },
-        "neighbourhood": "Punta Cancun",
-        "deals": {},
-        "messaging": {},
-        "badging": {
-            "hotelBadge": {
-                "type": "vipBasic",
-                "label": "VIP"
-            }
-        },
-        "pimmsAttributes": "Oceanviewv1|DoubleStamps|DELTA21|OnBeachPropertyv2|TESCO",
-        "coordinate": {
-            "lat": 21.126517,
-            "lon": -86.752961
-        },
-        "providerType": "LOCAL",
-        "supplierHotelId": 27301,
-        "isAlternative": false,
-        "optimizedThumbUrls": {
-            "srpDesktop": "https://exp.cdn-hotels.com/hotels/1000000/30000/27400/27301/9a954bde_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
-        }
-    },
-    {
-        "id": 633722336,
-        "name": "The Villas Cancun by Grand Park Royal - All Inclusive",
-        "starRating": 4.0,
-        "urls": {},
-        "address": {
-            "streetAddress": "Boulevard Kukulcan KM 10.5",
-            "extendedAddress": "",
-            "locality": "Cancun",
-            "postalCode": "77500",
-            "region": "QROO",
-            "countryName": "Mexico",
-            "countryCode": "mx",
-            "obfuscate": false
-        },
-        "guestReviews": {
-            "unformattedRating": 8.2,
-            "rating": "8.2",
-            "total": 144,
-            "scale": 10,
-            "badge": "very-good",
-            "badgeText": "Very Good"
-        },
-        "landmarks": [
-            {
-                "label": "City center",
-                "distance": "5.4 miles"
-            },
-            {
-                "label": "Cancun, Quintana Roo (CUN-Cancun Intl.)",
-                "distance": "9.7 miles"
-            }
-        ],
-        "geoBullets": [],
-        "ratePlan": {
-            "price": {
-                "current": "$668",
-                "exactCurrent": 667.82,
-                "old": "$954"
-            },
-            "features": {
-                "paymentPreference": false,
-                "noCCRequired": false
-            }
-        },
-        "neighbourhood": "Punta Cancun",
+        "neighbourhood": "Downtown Cancun",
         "deals": {},
         "messaging": {},
         "badging": {},
-        "pimmsAttributes": "DoubleStamps|Oceanviewv1|D13|TESCO",
+        "pimmsAttributes": "DoubleStamps|D13|TESCO",
         "coordinate": {
-            "lat": 21.124021,
-            "lon": -86.752994
+            "lat": 21.142865,
+            "lon": -86.889937
         },
         "providerType": "MULTISOURCE",
-        "supplierHotelId": 19772573,
+        "supplierHotelId": 10029875,
         "isAlternative": false,
         "optimizedThumbUrls": {
-            "srpDesktop": "https://exp.cdn-hotels.com/hotels/20000000/19780000/19772600/19772573/9c6af1d8_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            "srpDesktop": "https://exp.cdn-hotels.com/hotels/11000000/10030000/10029900/10029875/29fc15d8_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
         }
     },
     {
-        "id": 594959,
-        "name": "Moon Palace The Grand Cancun All Inclusive",
-        "starRating": 5.0,
+        "id": 2290106272,
+        "name": "Hotel Chi Ibal Hu Cancun",
+        "starRating": 2.5,
         "urls": {},
         "address": {
-            "streetAddress": "Carretera Cancun-Chetumal Km. 36.5",
-            "extendedAddress": "Riviera Maya",
+            "streetAddress": "C. 35 Nte. 63",
+            "extendedAddress": "",
             "locality": "Cancun",
-            "postalCode": "77500",
+            "postalCode": "77513",
             "region": "QROO",
             "countryName": "Mexico",
             "countryCode": "mx",
             "obfuscate": false
         },
         "guestReviews": {
-            "unformattedRating": 8.6,
-            "rating": "8.6",
-            "total": 950,
-            "scale": 10,
-            "badge": "fabulous",
-            "badgeText": "Fabulous"
+            "unformattedRating": 5.0,
+            "rating": "5.0",
+            "total": 11,
+            "scale": 10
         },
         "landmarks": [
             {
                 "label": "City center",
-                "distance": "12 miles"
+                "distance": "0.7 miles"
             },
             {
                 "label": "Cancun, Quintana Roo (CUN-Cancun Intl.)",
-                "distance": "4.6 miles"
+                "distance": "9.2 miles"
             }
         ],
         "geoBullets": [],
         "ratePlan": {
             "price": {
-                "current": "$653",
-                "exactCurrent": 652.91,
-                "old": "$1,089"
+                "current": "$20",
+                "exactCurrent": 20.09,
+                "old": "$36"
             },
             "features": {
                 "paymentPreference": false,
                 "noCCRequired": false
             }
         },
-        "neighbourhood": "Cancun South",
+        "neighbourhood": "Downtown Cancun",
         "deals": {},
         "messaging": {},
-        "badging": {
-            "hotelBadge": {
-                "type": "vipBasic",
-                "label": "VIP"
-            }
-        },
-        "pimmsAttributes": "DoubleStamps|DELTA21|OnBeachPropertyv2|TESCO",
+        "badging": {},
+        "pimmsAttributes": "D13|HRW",
         "coordinate": {
-            "lat": 20.98876,
-            "lon": -86.82936
+            "lat": 21.169112,
+            "lon": -86.835097
         },
         "providerType": "LOCAL",
-        "supplierHotelId": 15194504,
+        "supplierHotelId": 71534571,
         "isAlternative": false,
         "optimizedThumbUrls": {
-            "srpDesktop": "https://exp.cdn-hotels.com/hotels/16000000/15200000/15194600/15194504/6d35a32f_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            "srpDesktop": "https://exp.cdn-hotels.com/hotels/72000000/71540000/71534600/71534571/c12457e9_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
         }
     }
 ]

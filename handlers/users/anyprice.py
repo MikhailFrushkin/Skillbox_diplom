@@ -68,7 +68,8 @@ async def answer_city(message: types.Message, state: FSMContext) -> None:
                 logger.info('Сохраняю ответ в state: city')
 
                 asyncio.create_task(delete_message(data['temp_mes']))
-                mes = await message.answer('Сколько отелей показать? (Максимально: {})'.format(config.MAX_HOTELS_TO_SHOW))
+                mes = await message.answer(
+                    'Сколько отелей показать? (Максимально: {})'.format(config.MAX_HOTELS_TO_SHOW))
                 data['city'] = answer
                 data['city_id'] = city_id
                 data['locale'] = locale
@@ -214,20 +215,8 @@ async def answer_is_photo(call: types.CallbackQuery, state: FSMContext) -> None:
             else:
                 data_to_user_response = await handler_request(request=hotels, message_data=data, is_photo=False)
                 for hotel in data_to_user_response:
-                    hotel_id = hotel.get('hotel_id')
-                    answer_message = 'Название: {name}\n' \
-                                     'Адрес: {adress}\n' \
-                                     'Расстояние от центра: {dist}\n' \
-                                     'Цена за сутки: {price}\n' \
-                                     'Ссылка на отель: {url}'.format(name=hotel.get("hotel_name"),
-                                                                     adress=hotel.get("address"),
-                                                                     dist=hotel.get("distance_from_center"),
-                                                                     price=hotel.get("price"),
-                                                                     url='ru.hotels.com/ho{}'.format(
-                                                                         hotel_id
-                                                                     )
-                                                                     )
-                    await call.message.answer(answer_message)
+                    result: str = await _print_result(hotel)
+                    await call.message.answer(result, disable_web_page_preview=True, reply_markup=menu)
                     asyncio.create_task(delete_message(data['temp_mes']))
                 asyncio.create_task(delete_message(sticker))
             await state.reset_state()
@@ -255,7 +244,7 @@ async def answer_photo_amount(message: types.Message, state: FSMContext) -> None
             await bot.send_message(message.from_user.id, 'Выбрано к показу фотографий: {}'.format(message.text),
                                    reply_markup=back_button)
             asyncio.create_task(delete_message(message))
-            logger.info('Получил ответ: {}. Сохраняю в state'.format(answer))
+
             async with state.proxy() as data:
                 asyncio.create_task(delete_message(data['temp_mes']))
                 data['photo_amount'] = int(answer)
@@ -281,26 +270,40 @@ async def answer_photo_amount(message: types.Message, state: FSMContext) -> None
                                 await message.answer_media_group(media)
                             else:
                                 await message.answer_photo(hotel['photo_url'][0])
-
-                            hotel_id = hotel.get('hotel_id')
-                            answer_message = 'Наименование: {name}\n' \
-                                             'Адрес: {adress}\n' \
-                                             'Расстояние от центра: {dist}\n' \
-                                             'Цена: {price}\n' \
-                                             'Ссылка на отель: {url}'.format(name=hotel.get("hotel_name"),
-                                                                             adress=hotel.get("address"),
-                                                                             dist=hotel.get("distance_from_center"),
-                                                                             price=hotel.get("price"),
-                                                                             url='ru.hotels.com/ho{}'.format(
-                                                                                 hotel_id
-                                                                             )
-                                                                             )
-
-                            await message.answer(answer_message, disable_web_page_preview=True, reply_markup=menu)
                         except Exception as ex:
-                            logger.debug('Ошибка в выводе фото {}'.format(ex))
-                            continue
+                            logger.debug('Ошибка в показе фото {}'.format(ex))
+                        result: str = await _print_result(hotel, data)
+                        await message.answer(result, disable_web_page_preview=True, reply_markup=menu)
                     asyncio.create_task(delete_message(sticker))
                     asyncio.create_task(delete_message(data['temp_mes']))
             await state.reset_state()
             logger.info('Очистил state')
+
+
+async def _print_result(hotel: dict, data: dict) -> str:
+    hotel_id = hotel.get('hotel_id')
+    result = '🏫Наименование: {name}\n' \
+             '📪Адрес: {adress}\n' \
+             '🚕Расстояние от центра: {dist}\n' \
+             '💴Цена за ночь: {price}\n' \
+             '💰Общая стоимость: {fullprice}\n' \
+             'Ссылка на отель: {url}'.format(name=hotel.get("hotel_name"),
+                                             adress=hotel.get("address"),
+                                             dist=hotel.get("distance_from_center"),
+                                             price=hotel.get("price"),
+                                             fullprice=_calculation_date(hotel, data),
+                                             url='hotels.com/ho{}'.format(
+                                                 hotel_id
+                                             )
+                                             )
+
+    return result
+
+
+def _calculation_date(hotel, data: dict) -> int:
+    import datetime
+    a = [int(i) for i in data['check_in'].split('-')]
+    b = [int(i) for i in data['check_out'].split('-')]
+    c = datetime.datetime(b[0], b[1], b[2]) - datetime.datetime(a[0], a[1], a[2])
+    result = int(str(c).split(' ')[0]) * int(hotel.get('price')[1:])
+    return result
