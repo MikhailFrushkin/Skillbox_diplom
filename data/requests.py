@@ -1,3 +1,4 @@
+import json
 import re
 import typing
 
@@ -5,6 +6,7 @@ import aiohttp.client
 from loguru import logger
 
 from data import config
+from data.config import path
 
 
 async def delete_spans(data: str):
@@ -13,13 +15,14 @@ async def delete_spans(data: str):
     return result.sub('', data)
 
 
-async def get_city_id(city_name: str, locale: str) -> int:
+async def get_city_id(city_name: str, locale: str) -> int | bool:
     """
     Запрашивает данные по полученному от пользователя городу, и получает id города для поиска отелей.
     :param city_name: Название города для поиска
     :param locale: Локация для запроса
     :return: Id города
     """
+
     url = '{}/locations/search'.format(config.BASE_URL)
     params = {'query': city_name, 'locale': str(locale)}
     try:
@@ -38,7 +41,7 @@ async def get_city_id(city_name: str, locale: str) -> int:
 
 
 async def get_hotels(city_id: int, hotels_amount: int, currency: str, locale: str, check_in: str,
-                     check_out: str, price_sort: str) -> typing.Optional[list]:
+                     check_out: str, price_sort: str) -> typing.Optional[list] | None:
     """
     Запрашивает отели в id города
     :param price_sort: сортировка по убыванию или возрастанию цены
@@ -63,7 +66,11 @@ async def get_hotels(city_id: int, hotels_amount: int, currency: str, locale: st
                 response = await resp.json()
                 hotels = response.get('data').get('body').get('searchResults').get('results')
                 if hotels:
-                    logger.info('получил отели {}'.format(hotels))
+                    for i in hotels:
+                        logger.info('Получил отели ')
+                        logger.info('{}'.format(i))
+                    with open('{}/Base/requests/{}.json'.format(path, city_id), 'w') as outfile:
+                        json.dump(hotels, outfile, indent=4)
                     return hotels
                 logger.error('Гостиниц по вашему запросу не найдено!')
                 return None
@@ -87,6 +94,9 @@ async def get_photos(hotel_id: int, photo_amount: int) -> list:
                 photo_list = response.get('hotelImages')[:photo_amount]
                 photo_list_url = [re.sub(pattern=r'{size}', repl='y', string=hotel.get('baseUrl')) for hotel in
                                   photo_list]
+                with open('{}/Base/requests/{}_photo.json'.format(path, hotel_id), 'w') as outfile:
+                    json.dump(photo_list_url, outfile)
                 return photo_list_url
+
     except Exception as err:
         logger.error(err)

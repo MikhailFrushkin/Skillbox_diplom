@@ -4,7 +4,7 @@ from loguru import logger
 from data.config import ADMINS
 
 
-async def on_startup_notify(dp: Dispatcher):
+async def on_startup_notify(dp: Dispatcher) -> None:
     """Отправка абминам сообщения, что бот запущен"""
     for admin in ADMINS:
         try:

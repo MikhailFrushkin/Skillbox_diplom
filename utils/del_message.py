@@ -6,7 +6,7 @@ from aiogram.utils.exceptions import (MessageToEditNotFound, MessageCantBeEdited
                                       MessageToDeleteNotFound)
 
 
-async def delete_message(message: types.Message, sleep_time: int = 0):
+async def delete_message(message: types.Message, sleep_time: int = 0) -> None:
     await asyncio.sleep(sleep_time)
     with suppress(MessageCantBeDeleted, MessageToDeleteNotFound):
         await message.delete()

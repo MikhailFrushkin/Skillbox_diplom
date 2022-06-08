@@ -5,5 +5,5 @@ from loader import dp
 
 
 @dp.message_handler(Command('history'))
-async def history_person(message: types.Message):
+async def history_person(message: types.Message) -> None:
     await message.answer('История запросов:')

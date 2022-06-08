@@ -12,7 +12,7 @@ from aiogram.dispatcher.filters import Command
 
 
 @dp.message_handler(CommandStart())
-async def bot_start(message: types.Message):
+async def bot_start(message: types.Message) -> None:
     await message.answer('Добро пожаловать, {}!'
                          '\nЯ бот - HotelsOnTheTrip'
                          '\nИ я помогу, подобрать отель на время поездки.'
@@ -20,7 +20,7 @@ async def bot_start(message: types.Message):
 
 
 @dp.message_handler(CommandHelp())
-async def bot_help(message: types.Message):
+async def bot_help(message: types.Message) -> None:
     text = '● /help — помощь по командам бота\n' \
            '● /lowprice — вывод самых дешёвых отелей в городе\n' \
            '● /highprice — вывод самых дорогих отелей в городе\n' \
@@ -31,17 +31,17 @@ async def bot_help(message: types.Message):
 
 
 @dp.message_handler(Command('history'))
-async def history(message: types.Message):
+async def history(message: types.Message) -> None:
     await history_person(message)
 
 
 @dp.message_handler(commands=['lowprice', 'highprice'], state='*')
-async def anyprice(message: types.Message, state: FSMContext):
+async def anyprice(message: types.Message, state: FSMContext) -> None:
     await get_any_price(message, state)
 
 
 @dp.message_handler(content_types=['text'], state='*')
-async def bot_message(message: types.Message, state: FSMContext):
+async def bot_message(message: types.Message, state: FSMContext) -> None:
     if message.text == 'Поиск по убыванию цены' or message.text == 'Поиск по возрастанию цены':
         await get_any_price(message, state)
     elif message.text == 'Поиск по точным параметрам':

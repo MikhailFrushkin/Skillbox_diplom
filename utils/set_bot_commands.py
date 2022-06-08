@@ -1,7 +1,7 @@
 from aiogram import types
 
 
-async def set_default_commands(dp):
+async def set_default_commands(dp) -> None:
     """команды бота в меню"""
     await dp.bot.set_my_commands(
         [

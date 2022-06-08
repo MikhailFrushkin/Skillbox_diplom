@@ -1,7 +1,7 @@
 from data.requests import get_photos
 
 
-async def prepare_data(hotel, is_photo, message_data) -> dict:
+async def prepare_data(hotel, is_photo: bool, message_data) -> dict:
     """
     Вывод результата пользователю
     :param hotel:
@@ -11,14 +11,14 @@ async def prepare_data(hotel, is_photo, message_data) -> dict:
     hotel_id = hotel.get('id')
     hotel_name = hotel.get('name')
     base_address = hotel.get('address')
-    address = 'Город {}, {}, {}'.format(
+    address = '{}, {}, {}'.format(
         base_address.get("region"), base_address.get("locality"), hotel.get("address").get("streetAddress")
     )
     price = hotel.get('ratePlan').get('price').get('current')
     distance_from_center = hotel.get('landmarks')[0].get('distance')
 
     if is_photo:
-        photo_url_list = await get_photos(hotel_id=hotel['id'], photo_amount=message_data.get('photo_amount'))
+        photo_url_list: list = await get_photos(hotel_id=hotel['id'], photo_amount=message_data.get('photo_amount'))
     data_to_return = {
         'hotel_id': hotel_id,
         'hotel_name': hotel_name,
@@ -38,7 +38,7 @@ async def handler_request(request: list, message_data: dict, is_photo: bool) -> 
     :param request:
     :param message_data:
     """
-    data_to_return: list = []
+    data_to_return = []
     for hotel in request:
         hotel_data = await prepare_data(hotel, is_photo, message_data)
         data_to_return.append(hotel_data)

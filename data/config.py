@@ -3,6 +3,7 @@ from environs import Env
 
 env = Env()
 env.read_env()
+path = 'C:/Users/Skillbox_diplom'
 
 BOT_TOKEN = env.str('BOT_TOKEN')
 ADMINS = env.list('ADMINS')
@@ -21,8 +22,8 @@ locales = {
         'currency': 'USD'
     },
     'ru': {
-        'locale': 'ru_RU',
-        'currency': 'RUR'
+        'locale': 'en_US',
+        'currency': 'USD'
     }
 }
 

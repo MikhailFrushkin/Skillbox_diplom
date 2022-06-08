@@ -5,6 +5,6 @@ from loader import dp
 
 
 @dp.message_handler(Command('bestdeal'))
-async def bestdeal(message: types.Message):
+async def bestdeal(message: types.Message) -> None:
     await message.answer('Вы выбрали поиск по точным параметрам\n'
                          'введите название города')

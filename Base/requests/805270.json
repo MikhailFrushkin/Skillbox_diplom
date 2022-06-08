@@ -1,0 +1,302 @@
+[
+    {
+        "id": 109556,
+        "name": "Kolonna Hotel Brigita",
+        "starRating": 3.0,
+        "urls": {},
+        "address": {
+            "streetAddress": "11 Saulkalnes Street",
+            "extendedAddress": "",
+            "locality": "Riga",
+            "postalCode": "LV-1058",
+            "region": "",
+            "countryName": "Latvia",
+            "countryCode": "lv",
+            "obfuscate": false
+        },
+        "guestReviews": {
+            "unformattedRating": 8.2,
+            "rating": "8.2",
+            "total": 127,
+            "scale": 10,
+            "badge": "very-good",
+            "badgeText": "Very Good"
+        },
+        "landmarks": [
+            {
+                "label": "City center",
+                "distance": "2.4 miles"
+            },
+            {
+                "label": "Riga International Airport (RIX)",
+                "distance": "4.8 miles"
+            }
+        ],
+        "geoBullets": [],
+        "ratePlan": {
+            "price": {
+                "current": "$28",
+                "exactCurrent": 28.39
+            },
+            "features": {
+                "paymentPreference": false,
+                "noCCRequired": false
+            }
+        },
+        "neighbourhood": "Ziepniekkalns",
+        "deals": {},
+        "messaging": {},
+        "badging": {},
+        "pimmsAttributes": "DoubleStamps|D13|TESCO",
+        "coordinate": {
+            "lat": 56.91383,
+            "lon": 24.09962
+        },
+        "providerType": "MULTISOURCE",
+        "supplierHotelId": 197742,
+        "isAlternative": false,
+        "optimizedThumbUrls": {
+            "srpDesktop": "https://exp.cdn-hotels.com/hotels/1000000/200000/197800/197742/e8423d8a_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+        }
+    },
+    {
+        "id": 244481,
+        "name": "Apart Hotel TOMO",
+        "starRating": 3.5,
+        "urls": {},
+        "address": {
+            "streetAddress": "44, Raunas Street",
+            "extendedAddress": "",
+            "locality": "Riga",
+            "postalCode": "LV 1039",
+            "region": "",
+            "countryName": "Latvia",
+            "countryCode": "lv",
+            "obfuscate": false
+        },
+        "guestReviews": {
+            "unformattedRating": 7.2,
+            "rating": "7.2",
+            "total": 221,
+            "scale": 10,
+            "badge": "good",
+            "badgeText": "Good"
+        },
+        "landmarks": [
+            {
+                "label": "City center",
+                "distance": "3.0 miles"
+            },
+            {
+                "label": "Riga International Airport (RIX)",
+                "distance": "8.4 miles"
+            }
+        ],
+        "geoBullets": [],
+        "ratePlan": {
+            "price": {
+                "current": "$32",
+                "exactCurrent": 32.09
+            },
+            "features": {
+                "paymentPreference": false,
+                "noCCRequired": false
+            }
+        },
+        "neighbourhood": "Teika",
+        "deals": {},
+        "messaging": {},
+        "badging": {},
+        "pimmsAttributes": "DoubleStamps|D13|TESCO",
+        "coordinate": {
+            "lat": 56.96842,
+            "lon": 24.18028
+        },
+        "providerType": "MULTISOURCE",
+        "supplierHotelId": 1531020,
+        "isAlternative": false,
+        "optimizedThumbUrls": {
+            "srpDesktop": "https://exp.cdn-hotels.com/hotels/2000000/1540000/1531100/1531020/58e35b63_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+        }
+    },
+    {
+        "id": 255024,
+        "name": "Hanza Hotel",
+        "starRating": 3.5,
+        "urls": {},
+        "address": {
+            "streetAddress": "7 Elijas Street",
+            "extendedAddress": "",
+            "locality": "Riga",
+            "postalCode": "LV-1050",
+            "region": "",
+            "countryName": "Latvia",
+            "countryCode": "lv",
+            "obfuscate": false
+        },
+        "guestReviews": {
+            "unformattedRating": 8.0,
+            "rating": "8.0",
+            "total": 1011,
+            "scale": 10,
+            "badge": "very-good",
+            "badgeText": "Very Good"
+        },
+        "landmarks": [
+            {
+                "label": "City center",
+                "distance": "0.7 miles"
+            },
+            {
+                "label": "Riga International Airport (RIX)",
+                "distance": "5.8 miles"
+            }
+        ],
+        "geoBullets": [],
+        "ratePlan": {
+            "price": {
+                "current": "$36",
+                "exactCurrent": 36.19
+            },
+            "features": {
+                "paymentPreference": false,
+                "noCCRequired": false
+            }
+        },
+        "neighbourhood": "Maskavas Forstate",
+        "deals": {},
+        "messaging": {},
+        "badging": {},
+        "pimmsAttributes": "DoubleStamps|D13|TESCO",
+        "coordinate": {
+            "lat": 56.94186,
+            "lon": 24.12291
+        },
+        "providerType": "MULTISOURCE",
+        "supplierHotelId": 1671537,
+        "isAlternative": false,
+        "optimizedThumbUrls": {
+            "srpDesktop": "https://exp.cdn-hotels.com/hotels/2000000/1680000/1671600/1671537/04737371_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+        }
+    },
+    {
+        "id": 237325,
+        "name": "Best Hotel",
+        "starRating": 3.0,
+        "urls": {},
+        "address": {
+            "streetAddress": "9-11 Gimnastikas Street",
+            "extendedAddress": "",
+            "locality": "Riga",
+            "postalCode": "LV-1004",
+            "region": "",
+            "countryName": "Latvia",
+            "countryCode": "lv",
+            "obfuscate": false
+        },
+        "guestReviews": {
+            "unformattedRating": 7.8,
+            "rating": "7.8",
+            "total": 210,
+            "scale": 10,
+            "badge": "good",
+            "badgeText": "Good"
+        },
+        "landmarks": [
+            {
+                "label": "City center",
+                "distance": "2.3 miles"
+            },
+            {
+                "label": "Riga International Airport (RIX)",
+                "distance": "4.3 miles"
+            }
+        ],
+        "geoBullets": [],
+        "ratePlan": {
+            "price": {
+                "current": "$38",
+                "exactCurrent": 37.56
+            },
+            "features": {
+                "paymentPreference": false,
+                "noCCRequired": false
+            }
+        },
+        "neighbourhood": "Atgazene",
+        "deals": {},
+        "messaging": {},
+        "badging": {},
+        "pimmsAttributes": "DoubleStamps|D13|TESCO",
+        "coordinate": {
+            "lat": 56.91674,
+            "lon": 24.08607
+        },
+        "providerType": "MULTISOURCE",
+        "supplierHotelId": 1181135,
+        "isAlternative": false,
+        "optimizedThumbUrls": {
+            "srpDesktop": "https://exp.cdn-hotels.com/hotels/2000000/1190000/1181200/1181135/e6990d99_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+        }
+    },
+    {
+        "id": 629901120,
+        "name": "YurD24",
+        "starRating": 3.0,
+        "urls": {},
+        "address": {
+            "streetAddress": "Nometnu 24",
+            "extendedAddress": "",
+            "locality": "Jurmala",
+            "postalCode": "LV-2008",
+            "region": "",
+            "countryName": "Latvia",
+            "countryCode": "lv",
+            "obfuscate": false
+        },
+        "guestReviews": {
+            "unformattedRating": 6.6,
+            "rating": "6.6",
+            "total": 4,
+            "scale": 10,
+            "badge": "good",
+            "badgeText": "Good"
+        },
+        "landmarks": [
+            {
+                "label": "City center",
+                "distance": "20 miles"
+            },
+            {
+                "label": "Riga International Airport (RIX)",
+                "distance": "15 miles"
+            }
+        ],
+        "geoBullets": [],
+        "ratePlan": {
+            "price": {
+                "current": "$38",
+                "exactCurrent": 38.23
+            },
+            "features": {
+                "paymentPreference": false,
+                "noCCRequired": false
+            }
+        },
+        "neighbourhood": "Jurmala",
+        "deals": {},
+        "messaging": {},
+        "badging": {},
+        "pimmsAttributes": "DoubleStamps|D13|TESCO",
+        "coordinate": {
+            "lat": 56.95924,
+            "lon": 23.59212
+        },
+        "providerType": "LOCAL",
+        "supplierHotelId": 19653160,
+        "isAlternative": false,
+        "optimizedThumbUrls": {
+            "srpDesktop": "https://exp.cdn-hotels.com/hotels/20000000/19660000/19653200/19653160/ceb45f3e_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+        }
+    }
+]
